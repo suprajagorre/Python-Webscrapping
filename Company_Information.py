@@ -28,6 +28,6 @@ df['companyname'] = companyname
 df['RevenueDate'] = revenuedate
 df['TotalRevenue'] = totalrevenue   
 
-writer = pd.ExcelWriter('thailand_company_info.xlsx',engine='xlsxwriter')
+writer = pd.ExcelWriter('Companies_info.xlsx',engine='xlsxwriter')
 df.to_excel(writer,sheet_name='Sheet1')
 writer.save()   
